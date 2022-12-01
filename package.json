@@ -1,0 +1,33 @@
+{
+  "name": "editor-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint:fixed": "npx eslint \"{src,test}/**/*.{vue,ts,tsx}\" --fix",
+    "prettier:fixed": "npx prettier --write \"{src,test}/**/*.{vue,ts,tsx,html}\""
+  },
+  "dependencies": {
+    "ant-design-vue": "^3.2.15",
+    "pinia": "^2.0.27",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/parser": "^5.45.0",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "prettier": "^2.8.0",
+    "sass": "^1.56.1",
+    "typescript": "^4.6.4",
+    "unplugin-vue-components": "^0.22.11",
+    "vite": "^3.2.3",
+    "vue-tsc": "^1.0.9"
+  }
+}
