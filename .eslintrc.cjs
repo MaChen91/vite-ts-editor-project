@@ -10,6 +10,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier'
   ],
+  globals: {
+    stringObject: 'readonly'
+  },
   overrides: [],
   parser: 'vue-eslint-parser',
   parserOptions: {

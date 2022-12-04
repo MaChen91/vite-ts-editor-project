@@ -11,15 +11,20 @@
     "prettier:fixed": "npx prettier --write \"{src,test}/**/*.{vue,ts,tsx,html}\""
   },
   "dependencies": {
+    "@types/uuid": "^9.0.0",
     "ant-design-vue": "^3.2.15",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.0.27",
+    "uuid": "^9.0.0",
     "vue": "^3.2.41",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
     "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.1",
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.8.0",
