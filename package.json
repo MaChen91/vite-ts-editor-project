@@ -8,7 +8,8 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint:fixed": "npx eslint \"{src,test}/**/*.{vue,ts,tsx}\" --fix",
-    "prettier:fixed": "npx prettier --write \"{src,test}/**/*.{vue,ts,tsx,html}\""
+    "prettier:fixed": "npx prettier --write \"{src,test}/**/*.{vue,ts,tsx,html}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/uuid": "^9.0.0",
@@ -28,6 +29,7 @@
     "eslint": "^8.28.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^9.8.0",
+    "husky": "^8.0.2",
     "prettier": "^2.8.0",
     "sass": "^1.56.1",
     "typescript": "^4.6.4",

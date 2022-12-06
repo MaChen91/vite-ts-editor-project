@@ -63,5 +63,39 @@ export const mapPropsToForms: PropsToForms = {
     subComponent: 'a-select-option',
     text: '字体',
     options: [{ value: '', text: '无' }, ...fontFamilyOptions]
+  },
+  color: {
+    component: 'color-picker',
+    text: '字体颜色'
+  },
+  fontWeight: {
+    component: 'icon-switch',
+    text: '加粗',
+    extraProps: {
+      label: (<span style={{ fontWeight: 'bold' }}>B</span>) as VNode,
+      tooltip: '加粗'
+    },
+    initalTransform: (v: string) => v === 'bold',
+    afterTransform: (e: boolean) => (e ? 'bold' : '')
+  },
+  fontStyle: {
+    component: 'icon-switch',
+    text: '斜体',
+    extraProps: {
+      tooltip: '斜体',
+      label: (<span style={{ fontStyle: 'italic' }}>I</span>) as VNode
+    },
+    initalTransform: (v: string) => v === 'italic',
+    afterTransform: (e: boolean) => (e ? 'italic' : '')
+  },
+  textDecoration: {
+    component: 'icon-switch',
+    text: '下划线',
+    extraProps: {
+      tooltip: '斜体',
+      label: (<span style={{ textDecoration: 'underline' }}>I</span>) as VNode
+    },
+    initalTransform: (v: string) => v === 'underline',
+    afterTransform: (e: boolean) => (e ? 'underline' : '')
   }
 }

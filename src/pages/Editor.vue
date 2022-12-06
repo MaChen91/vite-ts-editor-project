@@ -13,7 +13,7 @@
   }
 
   const handleChange = (e: any) => {
-    console.log('event', e)
+    //console.log('event', e)
     updateCurrentElement(e)
   }
 </script>

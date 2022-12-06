@@ -20,7 +20,10 @@ const testComponentData: IComponentData[] = [
       textAlign: 'left',
       fontSize: '16px',
       color: '#000000',
-      fontFamily: '"SimSun","STSong"'
+      fontFamily: '"SimSun","STSong"',
+      fontWeight: '',
+      fontStyle: '',
+      textDecoration: ''
     }
   },
   {
@@ -29,7 +32,7 @@ const testComponentData: IComponentData[] = [
     props: {
       text: '来啊来啊',
       fontSize: '20px',
-      color: 'blue'
+      color: '#1890ff'
     }
   }
 ]
@@ -54,7 +57,6 @@ export const useEditorStore = defineStore('editor', {
       })
     },
     getCurrentElement(id: string) {
-      console.log(id)
       this.currentElement = this.components.find((item) => item.id === id)
     },
     updateCurrentElement({ key, value }: { key: 'text'; value: string }) {
